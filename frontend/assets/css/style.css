@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;500;700&display=swap');
+body {
+    background-color: black;
+}
+/* NAVBAR */
+.img-icon {
+    border-radius: 10px !important;
+    margin-left: -87px;
+}
+.nav-link {
+    color: white !important;
+    margin-right: -125px;
+}
+.nav-link:hover {
+    color: blue !important;
+}
+.formnodejs {
+    margin-left: -39px;
+}
+
+.navbar {
+    border-radius: 5px !important;
+}
+
+.btn-nav {
+    margin-right: -132px;
+}
+
+/* form - section*/
+
+.sc1 {
+    background-color: rgb(255, 255, 255);
+    width: 557px;
+    height: 556px;
+    padding-top: 25px;
+    margin-top: 60px;
+    text-align: center;
+    border-radius: 51px;
+    font-family: 'Roboto';
+}
+
+form {
+    margin-top: 65px;
+}
+form input {
+    width: 400px !important;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* form register section2 */
+
+.sc2 {
+    background-color: rgb(255, 255, 255);
+    width: 557px;
+    height: 611px;
+    padding-top: 25px;
+    margin-top: 41px;
+    text-align: center;
+    border-radius: 51px;
+    font-family: 'Roboto';
+    
+}
+
+.form2 {
+    margin-top: 42px ;
+}
+
+.flash {
+    margin-left: -502px;
+    width: 308px;
+    margin-top: -143px
+}
