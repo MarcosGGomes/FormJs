@@ -25,6 +25,7 @@
     "express-session": "^1.17.3",
     "helmet": "^6.0.1",
     "mongoose": "^6.8.2",
+    "nodemailer": "^6.8.0",
     "regenerator-runtime": "^0.13.11",
     "salt": "^0.5.5",
     "style-loader": "^3.3.1",

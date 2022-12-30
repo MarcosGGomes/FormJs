@@ -3,7 +3,7 @@
     <section class="container sc1">
        <h1>Login</h1>
        <hr>
-       <form>
+       <form method="post" action="/home">
         <input type="hidden" name="_csrf" value="<%= csrfToken %>">
         <div class="form-outline mb-4">
           <input type="email" id="form1Example1" class="form-control" name="email"/>
@@ -15,7 +15,7 @@
         </div>
         <div class="row mb-4">
           <div class="col">
-            <a href="#!">Forgot password?</a>
+            <a href="/recovery">Forgot password?</a>
           </div>
         </div>
         <button type="submit" class="btn btn-primary btn-block">Sign in</button>

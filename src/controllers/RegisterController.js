@@ -1,5 +1,5 @@
 const { async } = require('regenerator-runtime');
-const Register = require('../models/RegisterUserModel');
+const Register = require('../models/UserModel');
 
 exports.registerIndex = (req, res) => {
     res.render('register');
@@ -22,6 +22,6 @@ exports.registerUser = async (req, res) => {
         })
 
     } catch(e) {
-        console.log(e)
+        console.log(e);
     }
-}
+};

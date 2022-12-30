@@ -1,0 +1,18 @@
+<%- include('includes/head') %> 
+<%- include('includes/nav') %> 
+
+<section class="container sc2">
+    <h1>Recover Password</h1>
+    <hr>
+    <h2>Enter your email address</h2>
+    <p>We will send a code to your email. <br> Please check your email box.</p>
+    <form class="form" method="post" action="/recovery/code">
+     <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+     <div class="form-outline mb-4">
+         <input type="email" id="form1Example1" class="form-control" name="email"/>
+         <label class="form-label" for="form1Example1">Email:</label>
+     </div>
+        <button>a</button>
+    </form>   
+</section>
+<%- include('includes/footer') %> 
