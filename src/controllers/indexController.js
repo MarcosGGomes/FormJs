@@ -9,14 +9,24 @@ exports.recoveryIndex = (req, res) => {
     res.render('recovery');
 }
 
-//fix tomorrow
+//Update  and fix soon 
 exports.recovery = async (req, res) => {
     try {
         const login = new Login(req.body);
         await login.recoveryPass(req.body.email)
-        
+        if(login.errors.length > 0) {
+            req.flash('errors', login.errors);
+            req.session.save(function() {
+                return res.redirect('/recovery');
+            });
+            return;
+        }
+        req.flash('success', 'Check your box');
+        req.session.save(function() {
+            return res.redirect('/recovery');
+        });
     } catch (error) {
-        // 
+        console.log(e);
     }        
     
 }

@@ -37,7 +37,6 @@ class Email {
             } else {
                 console.log('Email sent!');
             }
-            return mail;
         });
     }
     

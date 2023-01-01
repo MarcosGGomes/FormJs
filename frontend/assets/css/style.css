@@ -74,3 +74,24 @@ form input {
 
 /* RECOVERY PAGE */
 
+.sc2 {
+    background-color: rgb(255, 255, 255);
+    width: 557px;
+    height: 611px;
+    padding-top: 25px;
+    margin-top: 41px;
+    text-align: center;
+    border-radius: 51px;
+    font-family: 'Roboto';
+    
+}
+
+.form2 {
+    margin-top: 42px ;
+}
+
+.flash {
+    margin-left: -502px;
+    width: 308px;
+    margin-top: -143px
+}

@@ -47,18 +47,17 @@ class User {
         this.user = await UserModel.create(this.body);
     }
 
-
+    //Update  and fix soon 
     async recoveryPass(email) {
+        if(this.errors.length > 0) return;
         this.user = await UserModel.findOne({email: this.body.email})
         const mail = new sendMail(email);
         if(this.user) {
-            console.log('check your box');
             return await mail.sendMail();
         } if (!this.user) {
-            console.log('Usuario nao existe');
-        }
-            
-        
+            this.errors.push('Email not registered');
+            return;
+        }   
     }
 
     validate() {
