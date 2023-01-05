@@ -1,3 +1,2 @@
 # FormJs
-Form com expressjs 
-feito para estudo 
+This is a study project. don't expect perfection.
