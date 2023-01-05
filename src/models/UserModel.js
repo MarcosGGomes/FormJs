@@ -47,6 +47,14 @@ class User {
         this.user = await UserModel.create(this.body);
     }
 
+
+    async edit(id) {
+        if(typeof id !== 'string') return;
+        //this.validate();
+        if(this.errors.length > 0) return;
+        this.user = await UserModel.findByIdAndUpdate(id, this.body.password, this.body.password2), {new: true};
+    } 
+
     //Update  and fix soon 
     async recoveryPass(email) {
         if(this.errors.length > 0) return;

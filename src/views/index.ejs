@@ -1,27 +1,16 @@
 <%- include('includes/head') %> 
 <%- include('includes/nav') %> 
-    <section class="container sc1">
-       <h1>Login</h1>
-       <hr>
-       <form method="post" action="/home">
-        <input type="hidden" name="_csrf" value="<%= csrfToken %>">
-        <div class="form-outline mb-4">
-          <input type="email" id="form1Example1" class="form-control" name="email"/>
-          <label class="form-label" for="form1Example1">Email address</label>
-        </div>
-        <div class="form-outline mb-4">
-          <input type="password" id="form1Example2" class="form-control" name="password" />
-          <label class="form-label" for="form1Example2">Password</label>
-        </div>
-        <div class="row mb-4">
-          <div class="col">
-            <a href="/recovery">Forgot password?</a>
-          </div>
-        </div>
-        <button type="submit" class="btn btn-primary btn-block">Sign in</button>
-      </form>
-      <div class="flash">
-        <%- include('includes/flashMessages'); %> 
-      </div>
-    </section>
+    <main>
+        <div class="flash">
+            <%- include('includes/flashMessages'); %> 
+        </div>    
+        <h2>Sign in</h2>
+        <p>Fill in the form to proceed..</p>
+        <form action="/home" method="post">
+            <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+            <input type="email" name="email" placeholder="email">
+            <input type="password" name="password" placeholder="*****">
+            <input type="submit" value="Entrar">
+        </form>
+    </main>
 <%- include('includes/footer') %> 

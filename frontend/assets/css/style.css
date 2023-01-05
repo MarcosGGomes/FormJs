@@ -1,97 +1,102 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;500;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
 body {
+    background-color: rgb(34, 34, 34);
+    color: #fff;
+    max-width: 100%
+}
+.icon-nav {
+    width: 60px;
+    height: 60px;
+    margin: 5px 12px 0 12px;
+    border-radius: 10px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgba(42, 42, 42, 0.295);
+    align-items: center;
+    border-radius: 2px;
+}
+
+header a:hover {
+    border: 10px solid black;
+    color: white;
     background-color: black;
-}
-/* NAVBAR */
-.img-icon {
-    border-radius: 10px !important;
-    margin-left: -87px;
-}
-.nav-link {
-    color: white !important;
-    margin-right: -125px;
-}
-.nav-link:hover {
-    color: blue !important;
-}
-.formnodejs {
-    margin-left: -39px;
+    border-radius: 5px;
 }
 
-.navbar {
-    border-radius: 5px !important;
+li {
+    display: inline-block;
+    margin: 25px;
 }
 
-.btn-nav {
-    margin-right: -132px;
+a {
+    color: rgb(255, 209, 209);
+    text-decoration: none;
+    font-family: poppinslight;
 }
 
-/* form - section*/
-
-.sc1 {
-    background-color: rgb(255, 255, 255);
-    width: 557px;
-    height: 556px;
-    padding-top: 25px;
-    margin-top: 60px;
-    text-align: center;
-    border-radius: 51px;
-    font-family: 'Roboto';
+main {
+    display: block;
+    margin-top: 11%;
+    margin-left: 39%;
 }
 
 form {
-    margin-top: 65px;
+    display: flex;
+    flex-direction: column;
+    width: 35%;
 }
-form input {
-    width: 400px !important;
+
+input {
+    margin-top: 20px;
+    height: 20px;
+    padding: 15px;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+}
+
+form [type="submit"] {
+    height: 50px;
+    width: 100px;
+    background-color: rgba(0, 60, 255, 0.332);
+    color: white;
+    font-weight: bold;
+    font-family: poppinsregular;
+
+}
+
+form [type="submit"] {
+    cursor: pointer;
+}
+
+form [type="submit"]:hover {
+    background-color: rgba(0, 0, 255, 0.219);
+}
+
+h2 {
+    font-family: poppinssemibold;
+}
+
+p {
+    font-family: poppinsregular;
+
+}
+
+.flash {
     margin-left: auto;
-    margin-right: auto;
+    margin-top: -114px;
+    margin-bottom: 61px;
 }
 
-/* form register section2 */
 
-.sc2 {
-    background-color: rgb(255, 255, 255);
-    width: 557px;
-    height: 611px;
-    padding-top: 25px;
-    margin-top: 41px;
-    text-align: center;
-    border-radius: 51px;
-    font-family: 'Roboto';
-    
-}
 
-.form2 {
-    margin-top: 42px ;
-}
 
-.flash {
-    margin-left: -502px;
-    width: 308px;
-    margin-top: -143px
-}
 
-/* RECOVERY PAGE */
 
-.sc2 {
-    background-color: rgb(255, 255, 255);
-    width: 557px;
-    height: 611px;
-    padding-top: 25px;
-    margin-top: 41px;
-    text-align: center;
-    border-radius: 51px;
-    font-family: 'Roboto';
-    
-}
-
-.form2 {
-    margin-top: 42px ;
-}
-
-.flash {
-    margin-left: -502px;
-    width: 308px;
-    margin-top: -143px
-}

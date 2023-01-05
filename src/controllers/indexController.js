@@ -1,4 +1,5 @@
 const Login = require('./../models/UserModel');
+const Email = require('./../models/PassRecoveryModel');
 
 
 exports.index = (req, res) => {
@@ -23,12 +24,21 @@ exports.recovery = async (req, res) => {
         }
         req.flash('success', 'Check your box');
         req.session.save(function() {
-            return res.redirect('/recovery');
+            return res.redirect('/recovery/confirmation/' + login.user.email);
         });
     } catch (error) {
         console.log(e);
     }        
     
+}
+
+exports.code = (req, res) => {
+    res.render('code')    
+}
+
+exports.codeConfirmation = (req, res) => {
+    const email = new Email(req.params.email);
+    console.log(email.mailOptions.text);
 }
 
 exports.home = async (req, res) => {

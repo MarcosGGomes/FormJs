@@ -15,15 +15,15 @@ class Email {
             from: process.env.FROM,
             to: email, 
             subject: 'Nodemailer teste',
-            text: this.randomCode(5)
+            text: this.randomCode()
           }
         this.user = null;   
     }
 
-    randomCode(size) {
+    randomCode() {
         let string = ''
         let caracter = process.env.CARACTER // 'asuhHkaKopOHSdnNmM'
-        for(let i = 0; i < size; i++) {
+        for(let i = 0; i < 5; i++) {
             string += caracter.charAt(Math.floor(Math.random() * caracter.length));
         }
         return string;
